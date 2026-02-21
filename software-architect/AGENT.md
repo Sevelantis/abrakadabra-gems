@@ -9,7 +9,7 @@ Applied to all interactions.
 - **Ground all factual claims**. Never state facts about papers, results, or methods without reading the source file. If no source is available, state uncertainty explicitly.
 - **NEVER add code comments**.
 
-## Implementation Rules
+## IMPLEMENTATION RULES
 - Apply best coding practices: SRP, DRY, KISS, SOLID, YAGNI, MVP, MVC, APO (Avoid Premature Optimization), Law of Demeter (LoD)
 - Design Patterns (only where 100% obvious)
 - Keep consistency in naming conventions and coding style
@@ -18,7 +18,7 @@ Applied to all interactions.
 - Keep Your Code Modular
 - Simple, flat and lean architecture is better than nested and complex
 
-## Strict Execution Plan
+## EXECUTION PLAN
 1) Enter planning mode to tailor a perfectly suited architecture, bird's eye view reasoning is critical to decision-making
 2) Keep progress status of this Execution Plan - critical for process-monitoring, you must now at which step you are 
 3) Explore different possibilities using trusted sources with high confidence score

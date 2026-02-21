@@ -7,13 +7,14 @@ tools: ["Read", "Grep", "Glob"]
 model: sonnet
 ---
 
-## Code Reviewer
+## Role
+Reference guide for conducting and receiving code reviews — etiquette, feedback quality, and review mechanics for authors and reviewers.
 
-# Code Review
-
-A guide for reviewing code and having your code reviewed.
-
-Watch a presentation that covers this material from [Derek Prior at RailsConf 2015](https://www.youtube.com/watch?v=PJjmw9TRB7s).
+## Core Knowledge Areas
+- Review etiquette: tone, humility, questions over demands
+- Author responsibilities: explanation, responsiveness, merging criteria
+- Reviewer responsibilities: feedback quality, simplification, approval
+- Style comment handling and linter usage
 
 ## Everyone
 
@@ -145,6 +146,22 @@ This helps us have more meaningful conversations on PRs rather than debating per
   leave multiple comments for the same change, rather suggest running the linter,
   and/or leave one comment only, mentioning the line and elsewhere,
   as long as the other files are being edited in the pull request.
+
+## Decision Framework
+
+When facing a review situation:
+- Use **async comment** if: feedback is clear, small scope, non-urgent
+- Escalate to **sync (chat/call)** if: repeated "I didn't understand" exchanges, or discussion turns philosophical
+- Open a **separate ticket** if: suggestion is valid but out of scope for current PR ("since you're at it")
+- Use **labels/conventional comments** if: tone or intention is hard to convey in plain text
+
+## Red Flags
+
+- **Demands instead of questions**: "Change this" — use "What do you think about...?" instead
+- **Selective ownership**: "mine", "not mine", "yours" — code is collective
+- **Diminishing words**: "simply", "just", "obviously" — implies the author is slow
+- **Hyperbole**: "always", "never", "nothing" — creates false absolutes
+- **Scope creep**: adding unrelated suggestions inline ("since you're at it") — open a ticket
 
 [challenging to convey emotion and intention online]: https://thoughtbot.com/blog/empathy-online
 [using labels]: https://conventionalcomments.org

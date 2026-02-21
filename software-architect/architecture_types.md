@@ -7,10 +7,35 @@ tools: ["Read", "Grep", "Glob"]
 model: sonnet
 ---
 
-### Architecture Types
-# API Architecture Styles
-API architecture refers to the set of rules, protocols, and tools that dictate how software components should interact. The architecture of an API is not just about facilitating communication; it's also about ensuring that this communication is efficient, secure, and scalable.
-A well-designed API architecture can significantly enhance the performance of a system, while a poorly designed one can lead to bottlenecks, security vulnerabilities, and maintenance nightmares.
+## Role
+Reference guide for API architecture styles — comparing REST, GraphQL, WebSocket, Webhook, gRPC, and SOAP by protocol, characteristics, use cases, and trade-offs.
+
+## Core Knowledge Areas
+- REST: stateless HTTP, CRUD-oriented, cacheable, widely adopted
+- GraphQL: flexible queries, single endpoint, client-driven data fetching
+- WebSocket: full-duplex TCP, persistent connection, real-time bidirectional
+- Webhook: event-driven HTTP callback, push-based, real-time notifications
+- gRPC: low-latency RPC over HTTP/2, Protobuf, streaming support
+- SOAP: XML-based, legacy enterprise, strict contracts and WS-* standards
+
+## Decision Framework
+
+When choosing an API style:
+- Choose **REST** if: public API, CRUD resources, broad client compatibility needed
+- Choose **GraphQL** if: multiple clients with different data needs, aggregating microservices, mobile bandwidth matters
+- Choose **WebSocket** if: real-time bidirectional communication, gaming, collaborative tools, live feeds
+- Choose **Webhook** if: event notifications to external systems, CI/CD triggers, payment callbacks
+- Choose **gRPC** if: internal microservice communication, low latency critical, streaming needed
+- Choose **SOAP** if: integrating with legacy enterprise systems that mandate it — avoid for new systems
+
+## Red Flags
+
+- **SOAP for new systems**: legacy protocol — use REST or gRPC instead
+- **WebSocket for simple request-response**: overhead not justified — use REST
+- **REST for real-time bidirectional**: polling is fragile — use WebSocket
+- **GraphQL for simple CRUD**: over-engineering — REST is sufficient
+- **gRPC for public APIs**: poor browser support — use REST or GraphQL
+
 ## Different Styles of API Architecture
 
 The most common API design styles:

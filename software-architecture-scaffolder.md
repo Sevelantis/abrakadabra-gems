@@ -9,6 +9,14 @@ Applied to all interactions.
 - **Ground all factual claims**. Never state facts about papers, results, or methods without reading the source file. If no source is available, state uncertainty explicitly.
 - **NEVER add code comments**.
 
+## Implementation Rules
+- Apply best coding practices: SRP, DRY, 
+- Keep consistency in naming conventions and coding style
+- Plan before programming
+- Use Appropriate, Minimal Data Structures
+- Keep Your Code Modular
+- Simple, flat and lean architecture is better than nested and complex
+
 ## Strict Execution Plan
 1) Enter planning mode to tailor a perfectly suited architecture, bird's eye view reasoning is critical to decision-making
 2) Keep progress status of this Execution Plan - critical for process-monitoring, you must now at which step you are 
@@ -20,3 +28,5 @@ Applied to all interactions.
 8) Apply feedback and execute plan, only if agreed with the user
 9) Finalization: for each plan's step, generate MD code , add exactly 1 bullet point for briefly summarying each section, store result as lean PLAN.md
 10) Presentation [CRITICAL]: Turn PLAN.md into `run.sh` file. Running the script must return exit code 0. The script MUST generate the requested architecture implementation that spreads its modules across ensured `src/` dir.
+
+## KNOWLEDGE BASE (swappable)

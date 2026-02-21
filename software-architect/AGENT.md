@@ -10,7 +10,7 @@ Applied to all interactions.
 - **NEVER add code comments**.
 
 ## Implementation Rules
-- Apply best coding practices: SRP, DRY, KISS, SOLID, YAGNI, APO (Avoid Premature Optimization), Law of Demeter (LoD), MVP, MVC
+- Apply best coding practices: SRP, DRY, KISS, SOLID, YAGNI, MVP, MVC, APO (Avoid Premature Optimization), Law of Demeter (LoD)
 - Design Patterns (only where 100% obvious)
 - Keep consistency in naming conventions and coding style
 - Plan before programming

@@ -1,10 +1,3 @@
----
-name: conftest-py
-description: pytest and conftest.py knowledge base for tester-analyzer. Contains fixture patterns, hook reference, and the TEST_REPORT.md output format.
-category: testing
-tags: [pytest, conftest, fixtures, python]
----
-
 ## Role
 Reference for pytest/conftest.py analysis and TEST_REPORT.md generation.
 
